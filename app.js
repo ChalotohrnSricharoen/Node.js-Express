@@ -9,7 +9,8 @@ const port = 3000;
 app.use(morgan('combined'));
 
 app.get("/",(req,res) =>{
-    res.send("Hello BorntoDev Co., Ltd");
+    //res.send("Hello BorntoDev Co., Ltd");
+    res.render('index',{username: 'Art', customers: ["Chalothorn111","Chalothorn","Chalo"]});
 })
 
 app.listen(port, ()=>{
