@@ -1,5 +1,5 @@
 const express = require('express');
-const chalk  = require('chalk');
+const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 
@@ -8,11 +8,10 @@ const port = 3000;
 
 app.use(morgan('combined'));
 
-app.get("/",(req,res) =>{
-    //res.send("Hello BorntoDev Co., Ltd");
-    res.render('index',{username: 'Art', customers: ["Chalothorn111","Chalothorn","Chalo"]});
+app.get("/",(req,res) => {
+    res.send("Server is running s");
 })
 
 app.listen(port, ()=>{
-    debug("Listening on port" + chalk.green(" : "+port));
+    debug("Listenning on port" , chalk.green(port));
 })
