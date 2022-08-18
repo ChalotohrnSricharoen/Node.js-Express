@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
+const products = require("./data/products.json")
 const productRouter = express.Router();
 
 const app = express();
@@ -15,13 +16,9 @@ app.set("views","./src/views");
 app.set("view engine","ejs");
 
 productRouter.route("/").get((req,res) =>{
-    res.render("products" , {
-        products : [
-        {productTitle: 'iphone 11' , productDescription : '128Gb' , productPrice : 30000},
-        {productTitle: 'iphone 12' , productDescription : '128Gb' , productPrice : 40000},
-        {productTitle: 'iphone 13' , productDescription : '128Gb' , productPrice : 50000},
-    ],
- });
+    res.render("products" ,
+        products,
+ );
 })
 productRouter.route("/1").get((req,res) =>{
     res.send("Hello 1");

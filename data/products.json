@@ -1,0 +1,19 @@
+{
+    "products": [
+      {
+        "productTitle": "iphone 11",
+        "productDescription": "128Gb",
+        "productPrice": 30000
+      },
+      {
+        "productTitle": "iphone 12",
+        "productDescription": "128Gb",
+        "productPrice": 40000
+      },
+      {
+        "productTitle": "iphone 13",
+        "productDescription": "128Gb",
+        "productPrice": 50000
+      }
+    ]
+  }
