@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play | Free Startup and SaaS Landing Page Template by UIdeck</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello world23145</h1>
 
-    <section id="features" class="ud-features">
-      <div class="container">
-        <h1>Hello world23145</h1>
+    <% products.map((product) => { %>
+      <h4><%=product.productTitle %></h4>
+      <p><%=product.productDescription %></p>
+      <p><%=product.productPrice %></p>
+    <%})%>
 
-        <% products.map((product) => { %>
-          <h4><%=product.productTitle %></h4>
-          <p><%=product.productDescription %></p>
-          <p><%=product.productPrice %></p>
-        <%})%>
-
-      </div>
-    </section>
-
-  </body>
+  </div>
+</body>
 </html>
